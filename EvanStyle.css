@@ -90,12 +90,21 @@ body {
 
 /* TYPOGRAPHY */
 
-#column2 h2 {
+#Column2 h2 {
 	font-family: 'Droid Sans Mono', monospace;
 	font-size: 18px;
 	font-weight: normal;
 	padding-top: 20px;
 	margin-top: 0px;
+}
+
+#Column1 h4 {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 20px;
+	font-weight: normal;
+	padding-top: 20px;
+	margin-top: 0px;
+	text-align: center;
 }
 
 #column1 .p {
@@ -126,6 +135,24 @@ a {
 	font-size: 18px;
 	color: blue;
 	text-decoration: underline;
+}
+
+#Column1 ul {
+	display: flex;
+}
+
+#nav li {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 20px;
+	font-weight: normal;
+	padding-top: 20px;
+	margin-top: 0px;
+	list-style: none;
+	flex: 1 1 50%;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 /* Images */
@@ -421,6 +448,14 @@ mark {
 	#logo3 {
 		display: none;
 	}
+
+	#subheading {
+	display: block;
+	}
+
+	#subheading2 {
+	display: none;
+	}
 }
 
 @media screen and (max-width: 1110px) {
@@ -435,6 +470,14 @@ mark {
 
 	#logo3 {
 		display: none;
+	}
+
+	#subheading {
+	display: block;
+	}
+
+	#subheading2 {
+	display: none;
 	}
 }
 
@@ -452,5 +495,43 @@ mark {
 		display: block;
 	}
 
+	#subheading {
+	display: block;
+	}
+
+	#subheading2 {
+	display: none;
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+
+	#main {
+		flex-wrap: wrap;
+	}
+
+	#Column1 {
+		flex: 1 1 100%;
+	}
+
+	#Column2 {
+		flex: 1 1 100%;
+		margin-left: 10px;
+	}
+
+	#logo3 {
+		font-size: 7pt;
+		text-align: center;
+	}
+
+	#subheading {
+	display: none;
+	}
+
+	#subheading2 {
+	display: block;
+	}
+	
 }
 
