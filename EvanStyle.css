@@ -197,7 +197,7 @@ a {
     background-image: url("Images/SepiaDesk.png");
     min-height: 100vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -209,16 +209,14 @@ a {
 	font-size: 75px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	position: relative;
-	left: 9px;
+	text-align: center;
 }
 
 #text {
-	width: 520px;
+	width: 100%;
 	height: 300px;
 	position: absolute;
-	top: 30vh;
-	left: 30vw;
+	top: 200px;
 }
 
 #fakesub {
@@ -259,13 +257,15 @@ mark {
 	position: relative;
 	top: 0px;
 	left: 0px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #fakeheading {
 	font-family: "Trebuchet MS", sans-serif;
 	font-weight: bold;
 	color: white;
-	font-size: 70px;
+	font-size: 60px;
 	padding: 0px;
 	margin: 0px;
 	padding-left: 20px;
@@ -306,16 +306,23 @@ mark {
 }
 
 #photie {
-	float: right;
-	background-color: red;
-	position: relative;
-	top: -600px;
-	left: -70px;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 50px;
+	margin-top: 35px;
 }
 
 #photie img {
-	width: 400px;
+	width: 90%;
 	height: 600px;
+}
+
+#abouttext {
+	flex: 1 1 400px;
+}
+
+#aboutphoto {
+	flex: 1 2 400px;
 }
 
 /* Logo styles */
@@ -458,6 +465,8 @@ mark {
 	}
 }
 
+/* MacBook-ish width */
+
 @media screen and (max-width: 1110px) {
 	
 	#logo1 {
@@ -479,6 +488,22 @@ mark {
 	#subheading2 {
 	display: none;
 	}
+}
+
+@media screen and (max-width: 900px){
+
+	#aboutphoto {
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+	
+	#background {
+		background-attachment: 
+	}
+
 }
 
 @media screen and (max-width: 750px) {
@@ -532,6 +557,44 @@ mark {
 	#subheading2 {
 	display: block;
 	}
+
+	.resizelink {
+		font-size: 24px;
+	}
 	
 }
 
+@media screen and (max-width: 600px) {
+
+	#faketitle {
+		font-size: 55px;
+	}
+
+	#fakesub {
+		font-size: 15px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+
+	#faketitle {
+		font-size: 50px;
+	}
+
+	#fakesub {
+		font-size: 12px;
+	}
+	
+}
+
+@media screen and (max-width: 340px) {
+
+	#faketitle {
+		font-size: 45px;
+	}
+	
+	#fakesub {
+		font-size: 10px;
+	}
+}
