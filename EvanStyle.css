@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	min-height: 100%;
 }
 
 /* FLEXBOX */
@@ -248,10 +249,10 @@ a {
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    -webkit-background-size: auto 100%;
-  	-moz-background-size: auto 100%;
-  	-o-background-size: auto 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 }
 
 #faketitle {
@@ -302,7 +303,7 @@ mark {
 
 #about {
 	height: 1500px;
-	width: 100%;
+	width: 100vw;
 	background-color: #2d2e2c;
 	padding: 0px;
 	margin: 0px;
@@ -555,7 +556,7 @@ mark {
 
 @media screen and (max-width: 900px){
 
-	#aboutphoto {
+	#photie {
 		display: none;
 	}
 	
