@@ -245,7 +245,7 @@ a {
 
 .background {
     background-image: url("Images/SepiaDesk.png");
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -302,7 +302,7 @@ mark {
 }
 
 #about {
-	height: 1500px;
+	height: 1px;
 	width: 100vw;
 	background-color: #2d2e2c;
 	padding: 0px;
@@ -345,20 +345,20 @@ mark {
 
 #para1 {
 	position: relative;
-	top: 0px;
+	top: 10px;
 	left: 0px;
-	transition: all 0.10s;
-	-webkit-transition: all 0.10s;
-	-ms-transform: all 0.10s;
+	transition: top 0.10s;
+	-webkit-transition: top 0.10s;
+	-ms-transform: top 0.10s;
 }
 
 #para2 {
 	position: relative;
-	top: 0px;
+	top: 20px;
 	left: 0px;
-	transition: all 0.10s;
-	-webkit-transition: all 0.10s;
-	-ms-transform: all 0.10s;
+	transition: top 0.10s;
+	-webkit-transition: top 0.10s;
+	-ms-transform: top 0.10s;
 }
 
 #photie {
@@ -366,9 +366,11 @@ mark {
 	margin: 0px;
 	margin-left: 50px;
 	margin-top: 35px;
+	width: 90%;
+	height: 600px;
 }
 
-#photie img {
+#catpic {
 	width: 90%;
 	height: 600px;
 }
@@ -502,6 +504,10 @@ mark {
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-ms-transform: all 0.4s;
+}
+
+#about * {
+	display: none;
 }
 
 /* Responsive logos */
