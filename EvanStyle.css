@@ -245,7 +245,7 @@ a {
 
 .background {
     background-image: url("Images/SepiaDesk.png");
-    min-height: 100vh;
+    height: 100vh;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
