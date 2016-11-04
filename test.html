@@ -30,7 +30,7 @@
 </div>
 
 <div id="aboutphoto">
-<div id="photie"><img src="Images/thegoodboy.jpg"></div>
+<div id="photie"><img id="catpic" src="Images/thegoodboy.jpg"></div>
 </div>
 
 </div>
@@ -182,8 +182,22 @@ that project, and boldly claims to have no style. He is on
 
 	scrollEvent(document, 'scroll', function(e) {
 
-	// Photo turns
-	setTimeout(function(){
+    // Fake site generates
+    setTimeout(function(){
+    document.getElementById('about').style.display = "-webkit-flex"
+    document.getElementById('about').style.height = "1500px"
+    document.getElementById('abouttext').style.display = "inline"
+    document.getElementById('fakeheading').style.display = "block"
+    document.getElementById('para1').style.display = "inline-block"
+    document.getElementById('para2').style.display = "inline-block"
+    document.getElementById('aboutphoto').style.display = "-webkit-flex"
+    document.getElementById('photie').style.display = "block"
+    document.getElementById('catpic').style.display = "block"
+    }, 0000);
+
+
+	  // Photo turns
+	  setTimeout(function(){
   	document.getElementById('photie').className = "photoFalling"
   	}, 1000);
 
