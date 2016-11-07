@@ -243,7 +243,7 @@ a {
 	overflow-y: scroll;
 }
 
-.background {
+#background {
     background-image: url("Images/SepiaDesk.png");
     min-height: 100vh;
     background-attachment: fixed;
@@ -302,7 +302,7 @@ mark {
 }
 
 #about {
-	height: 1px;
+	height: 1500px;
 	width: 100vw;
 	background-color: #2d2e2c;
 	padding: 0px;
@@ -506,10 +506,6 @@ mark {
 	-ms-transform: all 0.4s;
 }
 
-#about * {
-	display: none;
-}
-
 /* Responsive logos */
 
 @media screen and (min-width: 1110px) {
@@ -560,6 +556,14 @@ mark {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+
+	#background {
+		background-attachment: scroll;
+	}
+	
+}
+
 @media screen and (max-width: 900px){
 
 	#photie {
@@ -569,10 +573,6 @@ mark {
 }
 
 @media screen and (max-width: 800px) {
-	
-	#background {
-		background-attachment: scroll;
-	}
 
 	#about {
 		width: 800px;
