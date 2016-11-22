@@ -2,6 +2,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 
 /* FLEXBOX */
@@ -116,7 +117,6 @@ body {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1 1 60%;
 	        flex: 1 1 60%;
-	background-color: white;
 	padding: 0px;
 	margin: 10px;
 }
@@ -159,7 +159,7 @@ body {
 	color: gray;
 }
 
-#column1 .h2 {
+.h2 {
 	font-family: 'Droid Sans Mono', monospace;
 	font-size: 28px;
 	color: gray;
@@ -205,6 +205,18 @@ a {
 	text-align: center;
 }
 
+#logo  {
+	color: black;
+	text-decoration: none;
+}
+
+.caption {
+	color: gray;
+	margin: 5px;
+	position: relative;
+	left: -5px;
+}
+
 /* Images */
 
 .project img {
@@ -241,6 +253,8 @@ a {
 	top: 0px;
 	left: 0px;
 	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: white;
 }
 
 #background {
@@ -283,10 +297,6 @@ a {
 	top: 0px;
 	left: 0px;
 
-}
-
-mark {
-	background-color: rgba(255,255,255,0.5);
 }
 
 .invisible {
@@ -506,7 +516,139 @@ mark {
 	-ms-transform: all 0.4s;
 }
 
-/* Responsive logos */
+/* Project page */
+
+#info {
+	position: relative;
+	top: 130px;
+	padding-bottom: 10px;
+}
+
+#info p {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#info p:last-of-type {
+	padding-bottom: 100px;
+	margin-bottom: 200px;
+}
+
+.projectimg img {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.projectimg {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.projectimg:first-of-type {
+	padding-top: 0px;
+}
+
+#info h2 {
+	font-size: 28px;
+	padding: 0px;
+}
+
+#mobiletext {
+	display: none;
+}
+
+/* Folio page */
+
+#main2 {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 100%;
+	        flex: 1 1 100%;
+	height: auto;
+	background-color: white;
+	border-style: dashed;
+	border-color: black;
+	border-width: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+
+#folioheader {
+	display: flex;
+	flex-wrap: nowrap;
+	flex: 1 1 100%;
+}
+
+#foliotopright {
+	margin: 10px;
+	margin-left: 0px;
+	padding: 0px;
+	display: block;
+}
+
+#foliotopright h2 {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 18px;
+	font-weight: normal;
+	padding-top: 20px;
+	margin-top: 0px;
+}
+
+#foliomain {
+	width: 100%;
+	display: flex;
+}
+
+#folioleft {
+	flex: 1 1 50%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#folioright {
+	flex: 1 1 50%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* Contact page */
+
+#contactgif {
+	width: 700px;
+}
+
+#maincontact {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 100%;
+	        flex: 1 1 100%;
+	height: auto;
+	background-color: white;
+	border-style: dashed;
+	border-color: black;
+	border-width: 2px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-wrap: wrap;
+	margin-left: 25px;
+}
+
+
+
+/* Responsive */
 
 @media screen and (min-width: 1110px) {
 	
@@ -531,8 +673,6 @@ mark {
 	}
 }
 
-/* MacBook-ish width */
-
 @media screen and (max-width: 1110px) {
 	
 	#logo1 {
@@ -548,11 +688,20 @@ mark {
 	}
 
 	#subheading {
-	display: block;
+		display: block;
 	}
 
 	#subheading2 {
-	display: none;
+		display: none;
+	}
+
+	#contactgif {
+		width: 600px;
+	}
+
+	#info {
+		position: relative;
+		top: 315px;
 	}
 }
 
@@ -594,6 +743,11 @@ mark {
 		display: block;
 	}
 
+	#info {
+		position: relative;
+		top: 210px;
+	}
+
 	#subheading {
 	display: block;
 	}
@@ -606,6 +760,19 @@ mark {
 		width: 750px;
 	}
 
+	#contactgif {
+		width: 500px;
+	}
+
+}
+
+@media screen and (max-width: 728px) {
+
+	#info {
+		position: relative;
+		top: 185px;
+	}
+	
 }
 
 @media screen and (max-width: 680px) {
@@ -647,6 +814,41 @@ mark {
 
 	#about {
 		width: 680px;
+	}
+
+	.projecttext {
+		display: none;
+	}
+
+	#mobiletext {
+		display: block;
+	}
+
+	#foliotopright {
+		display: none;
+	}
+
+	#foliomain {
+		flex-wrap: wrap;
+	}
+
+	#contactgif {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: 10px;
+	}
+
+	#contactlinks img {
+		width: 90%;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#contactlinks p {
+		text-align: center;
 	}
 	
 }
@@ -754,7 +956,7 @@ mark {
 
 	#about {
 		width: 400px;
-	}	
+	}
 
 }
 
