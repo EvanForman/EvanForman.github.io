@@ -258,7 +258,7 @@ a {
 }
 
 #background {
-    background-image: url("Images/SepiaDeskPoster-min.jpg");
+    background-image: url("Images/SepiaDeskPoster.jpg");
     min-height: 100vh;
     background-attachment: fixed;
     background-position: right;
@@ -626,6 +626,7 @@ a {
 
 #contactgif {
 	width: 700px;
+	margin-bottom: 30px;
 }
 
 #maincontact {
