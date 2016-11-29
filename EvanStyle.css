@@ -219,11 +219,11 @@ a {
 
 @font-face {
   font-family: 'Lovato';
-  src: url('Fonts/Lovato-Light.eot');
-  src: url('Fonts?Lovato-Light.eot?#iefix') format('embedded-opentype'),
-       url('Fonts/Lovato-Light.woff') format('woff'),
-       url('Fonts/Lovato-Light.ttf')  format('truetype'),
-       url('Fonts/Lovato-Light.svg#svgFontName') format('svg');
+  src: url('Fonts/Lovato/Lovato-Light.eot');
+  src: url('Fonts/Lovato/Lovato-Light.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/Lovato/Lovato-Light.woff') format('woff'),
+       url('Fonts/Lovato/Lovato-Light.ttf')  format('truetype'),
+       url('Fonts/Lovato/Lovato-Light.svg#svgFontName') format('svg');
 }
 
 /* Images */
