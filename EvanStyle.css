@@ -217,6 +217,15 @@ a {
 	left: -5px;
 }
 
+@font-face {
+  font-family: 'Lovato';
+  src: url('Fonts/Lovato-Light.eot');
+  src: url('Fonts?Lovato-Light.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/Lovato-Light.woff') format('woff'),
+       url('Fonts/Lovato-Light.ttf')  format('truetype'),
+       url('Fonts/Lovato-Light.svg#svgFontName') format('svg');
+}
+
 /* Images */
 
 .project img {
@@ -270,20 +279,38 @@ a {
 }
 
 #faketitle {
-	font-family: "Trebuchet MS", sans-serif;
+	font-family: "Lovato", sans-serif;
 	font-weight: bold;
 	color: white;
 	font-size: 75px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	text-align: center;
+	position: relative;
+	top: 30vh;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
+/* Safari-only */
+
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    #faketitle { 
+
+        -webkit-text-stroke-width: 2px;
+   		-webkit-text-stroke-color: white; 
+
+    }
+}}
 
 #text {
 	width: 100%;
-	height: 300px;
-	position: absolute;
-	top: 200px;
+	height: 100vh;
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
 }
 
 #fakesub {
@@ -294,7 +321,7 @@ a {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	top: 0px;
+	top: 30vh;
 	left: 0px;
 
 }
@@ -328,7 +355,7 @@ a {
 }
 
 #fakeheading {
-	font-family: "Trebuchet MS", sans-serif;
+	font-family: "Lovato", sans-serif;
 	font-weight: bold;
 	color: white;
 	font-size: 60px;
@@ -959,6 +986,15 @@ a {
 		width: 400px;
 	}
 
+}
+
+@media screen and (max-width: 375px) {
+
+	#text {
+		position: relative;
+		left: -10px;
+	}
+	
 }
 
 @media screen and (max-width: 340px) {
