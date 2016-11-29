@@ -293,6 +293,7 @@ a {
 	top: 30vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 /* Safari-only */
