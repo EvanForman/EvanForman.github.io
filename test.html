@@ -158,7 +158,6 @@ that project, and boldly claims to have no style. He is on
 	window.onload = function() {
 		loadEvan();
 		loadSub();
-    preCacheHeros();
 	}
 	
 	// Animate "Evan Forman" in on load
@@ -282,30 +281,35 @@ that project, and boldly claims to have no style. He is on
 	setTimeout(function(){
   	document.getElementById("container").className = "notfixed"
   	}, 3500);
-
-  // Preload portfolio images
-
-  var heroArray = [
-        '/Images/aberdeenthumb.jpg',
-        '/Images/obliquethumb.jpg',
-        '/Images/zeitthumbnail.jpg',
-        '/Images/tarminuus-new.jpg',
-        '/Images/goblet0.jpg',
-        '/Images/ouaf.jpg'
-    ]
-
-    function preCacheHeros(){
-    for(i = 0; i < heroArray.length; i++){
-        var url = heroArray[i],
-            img = new Image();
- 
-        img.src = url;
-    };
-};
+  
 
 
 
 	</script>
+
+  <!-- Preload portfolio thumbnails - from https://perishablepress.com/3-ways-preload-images-css-javascript-ajax/ -->
+
+  <div class="hidden">
+  <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "Images/aberdeenthumb.jpg",
+        "Images/zeitthumbnail.jpg",
+        "Images/goblet0.jpg",
+        "Images/obliquethumb.jpg",
+        "Images/ouaf.jpg",
+        "Images/tarminuus-new.jpg"
+      )
+    //--><!]]>
+  </script>
+</div>
 
 </body>
 </html>
