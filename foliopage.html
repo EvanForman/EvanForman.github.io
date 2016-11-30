@@ -144,28 +144,29 @@
 	</div>
 	</div>
 
-  <script>
-    
-    var heroArray = [
-        '/Images/zeitresearch1.jpg',
-        '/Images/oblique1.png',
-        '/Images/tarminuus-old.png',
-        '/Images/goblet1.jpg'
-        '/Images/aberdeenlogofinal.jpg'
-    ]
+  <!-- Preload portfolio thumbnails - from https://perishablepress.com/3-ways-preload-images-css-javascript-ajax/ -->
 
-    function preCacheHeros(){
-    for(i = 0; i < heroArray.length; i++){
-        var url = heroArray[i],
-            img = new Image();
- 
-        img.src = url;
-    };
-};
- 
-window.onload = preCacheHeros();
-
+  <div class="hidden">
+  <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "Images/aberdeenlogofinal.png",
+        "Images/zeitresearch1.jpg",
+        "Images/goblet1.png",
+        "Images/oblique1.png",
+        "Images/ouaf.png",
+        "Images/tarminuus-old.png"
+      )
+    //--><!]]>
   </script>
+</div>
 
 </body>
 </html>
