@@ -1059,3 +1059,11 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 		width: 340px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+
+	#faketitle {
+		font-size: 39px;
+	}
+	
+}
