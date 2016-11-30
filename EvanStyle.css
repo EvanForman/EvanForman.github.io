@@ -293,7 +293,7 @@ a {
 	top: 30vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
 }
 
 /* Safari-only */
@@ -306,6 +306,11 @@ and(-webkit-min-device-pixel-ratio:0) { @media
         -webkit-text-stroke-width: 2px;
    		-webkit-text-stroke-color: white; 
 
+    }
+
+    #fakeheading {
+    	-webkit-text-stroke-width: 2px;
+   		-webkit-text-stroke-color: white; 
     }
 }}
 
@@ -327,7 +332,34 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 	position: relative;
 	top: 30vh;
 	left: 0px;
+	display: block;
 
+}
+
+#fakesub2 {
+	font-family: "Nixie One", serif;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 30vh;
+	left: 0px;
+	display: none;
+}
+
+#fakesub3 {
+	font-family: "Nixie One", serif;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 30vh;
+	left: 0px;
+	display: none;
 }
 
 .invisible {
@@ -998,6 +1030,14 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 		position: relative;
 		left: -10px;
 	}
+
+	#fakesub {
+		display: none;
+	}
+
+	#fakesub2 {
+		display: block;
+	}
 	
 }
 
@@ -1007,8 +1047,12 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 		font-size: 45px;
 	}
 	
-	#fakesub {
-		font-size: 10px;
+	#fakesub2 {
+		display: none;
+	}
+
+	#fakesub3 {
+		display: block;
 	}
 
 	#about {
