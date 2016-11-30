@@ -144,5 +144,28 @@
 	</div>
 	</div>
 
+  <script>
+    
+    var heroArray = [
+        '/Images/zeitresearch1.jpg',
+        '/Images/oblique1.png',
+        '/Images/tarminuus-old.png',
+        '/Images/goblet1.jpg'
+        '/Images/aberdeenlogofinal.jpg'
+    ]
+
+    function preCacheHeros(){
+    for(i = 0; i < heroArray.length; i++){
+        var url = heroArray[i],
+            img = new Image();
+ 
+        img.src = url;
+    };
+};
+ 
+window.onload = preCacheHeros();
+
+  </script>
+
 </body>
 </html>
