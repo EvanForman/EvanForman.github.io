@@ -5,6 +5,10 @@ body {
 	overflow-x: hidden;
 }
 
+img {
+	background-color: gray;
+}
+
 /* FLEXBOX */
 
 #container {
@@ -710,6 +714,9 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 	margin-left: 25px;
 }
 
+.gif {
+	background-color: white;
+}
 
 
 /* Responsive */

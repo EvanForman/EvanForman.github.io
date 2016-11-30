@@ -158,6 +158,7 @@ that project, and boldly claims to have no style. He is on
 	window.onload = function() {
 		loadEvan();
 		loadSub();
+    preCacheHeros();
 	}
 	
 	// Animate "Evan Forman" in on load
@@ -281,6 +282,26 @@ that project, and boldly claims to have no style. He is on
 	setTimeout(function(){
   	document.getElementById("container").className = "notfixed"
   	}, 3500);
+
+  // Preload portfolio images
+
+  var heroArray = [
+        '/Images/aberdeenthumb.jpg',
+        '/Images/obliquethumb.jpg',
+        '/Images/zeitthumbnail.jpg',
+        '/Images/tarminuus-new.jpg',
+        '/Images/goblet0.jpg',
+        '/Images/ouaf.jpg'
+    ]
+
+    function preCacheHeros(){
+    for(i = 0; i < heroArray.length; i++){
+        var url = heroArray[i],
+            img = new Image();
+ 
+        img.src = url;
+    };
+};
 
 
 
