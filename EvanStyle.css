@@ -223,7 +223,7 @@ a {
 
 @font-face {
   font-family: 'Lovato';
-  src: url('Fonts/Lovato/Lovato-Light.eot'),
+  src: url('Fonts/Lovato/Lovato-Light.eot');
   src: url('Fonts/Lovato/Lovato-Light.eot?#iefix') format('embedded-opentype'),
   	   url('Fonts/Lovato/Lovato-Light.woff2') format('woff2'),
        url('Fonts/Lovato/Lovato-Light.woff') format('woff'),
@@ -422,7 +422,11 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 	margin: 0px;
 	padding: 0px;
 	padding-left: 20px;
-	width: 500px;
+	width: 100%;
+	display: block;
+	border: solid;
+	border-color: red;
+	border-width: 1px;
 }
 
 #para1 {
