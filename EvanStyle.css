@@ -171,7 +171,7 @@ img {
 
 #column1 .p {
 	font-family: 'Droid Sans Mono', monospace;
-	font-size: 16px;
+	font-size: 18px;
 	color: gray;
 }
 
@@ -189,12 +189,12 @@ img {
 
 #column1 p {
 	font-family: 'Droid Sans Mono', monospace;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 a {
 	font-family: 'Droid Sans Mono', monospace;
-	font-size: 16px;
+	font-size: 18px;
 	color: blue;
 	text-decoration: underline;
 }
@@ -603,7 +603,7 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 
 #info p {
 	font-family: 'Droid Sans Mono', monospace;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 }
 
