@@ -413,6 +413,10 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 	left: 0px;
 	display: block;
 	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: geometricPrecision;
+	text-shadow: 0 0 0;
 }
 
 .faketext {
