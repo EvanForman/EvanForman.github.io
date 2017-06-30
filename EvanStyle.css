@@ -251,6 +251,16 @@ a {
 
 /* Fake Site */
 
+#smokescreen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+}
+
 #fakesite {
 	z-index: 2;
 	position: absolute;
@@ -359,8 +369,8 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 
 .invisible {
 	opacity: 0;
-	transition: opacity 3s;
-	-webkit-transition: opacity 3s;
+	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
 }
 
 .visible {

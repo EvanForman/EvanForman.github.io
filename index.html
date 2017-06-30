@@ -48,7 +48,8 @@
 <body>
 
 	<!-- FAKE SITE -->
-	
+
+	<div id="smokescreen" class="visible"></div>
 	<div id="fakesite" class="sitefall1">
 <div id="background">
 	<div id="text">
@@ -190,16 +191,23 @@ in Aberdeen, Scotland. He recently graduated with an HND in Visual Communication
 
 	<script type="text/javascript">
 
-	window.onload = function() {
+	document.getElementById('background').onload = function() {
 		loadEvan();
 		loadSub();
+    smokescreen();
 	}
+
+  // Smokescreen fade-out
+
+  setTimeout(function smokescreen() {
+    document.getElementById('smokescreen').className = "invisible"
+  }, 0);
 	
 	// Animate "Evan Forman" in on load
 
-	function loadEvan() {
+	setTimeout(function loadEvan() {
 		document.getElementById('faketitle').className = "visible"
-	};
+	}, 1000);
 
 	// Animate subheading
 
@@ -207,7 +215,7 @@ in Aberdeen, Scotland. He recently graduated with an HND in Visual Communication
   		document.getElementById('fakesub').className = "visible"
       document.getElementById('fakesub2').className = "visible"
       document.getElementById('fakesub3').className = "visible"
-	}, 1200);
+	}, 2000);
 
 	// Scroll event listener
 	
