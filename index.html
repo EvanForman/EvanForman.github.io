@@ -49,9 +49,8 @@
 
 	<!-- FAKE SITE -->
 
-	<div id="smokescreen" class="visible"></div>
 	<div id="fakesite" class="sitefall1">
-<div id="background">
+<div id="background" class="invisible">
 	<div id="text">
 	<p id="faketitle" class="invisible">EVAN <span id="forman">FORMAN</span></p>
 	<p id="fakesub" class="invisible"><mark>&#8291;empowering leaders to implement authentic story&#8291;<br>&#8291;strategies since 2016&#8291;</mark></p>
@@ -79,7 +78,7 @@
 </div>
 
 	<!-- THE REAL MCCOY -->
-<div id="actualcontainer">
+<div id="actualcontainer" class="invisible">
 	<div id="container" class="fixed">
 		<div id="left"></div>
 		<div id="inside">
@@ -194,14 +193,21 @@ in Aberdeen, Scotland. He recently graduated with an HND in Visual Communication
 	document.getElementById('background').onload = function() {
 		loadEvan();
 		loadSub();
-    smokescreen();
-	}
+    loadBackground();
+    loadSite();
+	};
 
-  // Smokescreen fade-out
+  // Make background visible
 
-  setTimeout(function smokescreen() {
-    document.getElementById('smokescreen').className = "invisible"
+  setTimeout(function loadBackground() {
+    document.getElementById('background').className = "visible"
   }, 0);
+
+  // Make site visible
+
+  setTimeout(function loadSite() {
+    document.getElementById('actualcontainer').className = "visible"
+  }, 1000);
 	
 	// Animate "Evan Forman" in on load
 

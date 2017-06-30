@@ -251,16 +251,6 @@ a {
 
 /* Fake Site */
 
-#smokescreen {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-color: white;
-	width: 100vw;
-	height: 100vh;
-	z-index: 100;
-}
-
 #fakesite {
 	z-index: 2;
 	position: absolute;
@@ -281,6 +271,8 @@ a {
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
+  	transition: opacity 2s;
+	-webkit-transition: opacity 2s;
 }
 
 #faketitle {
