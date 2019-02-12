@@ -1,0 +1,29 @@
+@font-face {
+	font-family: helvetica;
+	src: url(helvetica-bold.ttf);
+
+}
+
+#main {
+	/*border: red solid 1px;*/
+	width: 50%;
+	height: auto;
+	margin-right: 25%;
+	margin-left: 25%;
+	padding: 0px;
+	position: absolute;
+	top: 45%;
+}
+
+#main p {
+	font-family: helvetica;
+	text-align: center;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#main a {
+	color: black;
+	text-decoration: none;
+}
