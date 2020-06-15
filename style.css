@@ -2,11 +2,13 @@ html {
 	margin: 25px;
 	padding: 0px;
 	padding-right: 25px;
+	padding-bottom: 50px;
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
+	max-width: 600px;
 }
 
 body {
