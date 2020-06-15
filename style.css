@@ -1,7 +1,6 @@
 html {
 	margin: 25px;
 	padding: 0px;
-	padding-right: 25px;
 	padding-bottom: 50px;
 }
 
@@ -38,14 +37,4 @@ body a {
 
 #topheader {
 	margin-top: 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  html {
-    padding-right: 0px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-	
 }
