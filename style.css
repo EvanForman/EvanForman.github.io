@@ -10,8 +10,17 @@ body {
 	max-width: 600px;
 }
 
+html {
+	background-color: #FFFFFF;
+}
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
+}
+
+body p, a, h1, h2 {
+	color: #000000;
+	mix-blend-mode: none;
 }
 
 body p {
@@ -28,7 +37,6 @@ body h2 {
 
 body a {
 	text-decoration: underline;
-	color: #000000;
 }
 
 .quoteital {
