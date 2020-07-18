@@ -4,33 +4,67 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Evan Forman</title>
-	<link rel="stylesheet" href="style.css">
 </head>
-<script>
-	// Variables
-	const colors = ["a6dcef","f5b971","fdd998","39375b","170a19","e4f2f0","ffba92","eeeeee","fbe8e7","494949","dfd3c3","ea8f79","ff8c94","f3d179","b1d1c5"];
-	const randomColor = colors[Math.floor(Math.random() * colors.length)];
+<style>
+	html {
+	margin: 25px;
+	padding: 0px;
+	padding-bottom: 50px;
+}
 
-	// If JS is supported, set a random background color + set text to white
+body {
+	margin: 0px;
+	padding: 0px;
+	max-width: 600px;
+}
 
-	function colorPicker() {
+html {
+	background-color: #FFFFFF;
+}
 
-		// Selector variables 
-		var x = document.getElementById("body");
-		var y = x.querySelectorAll("P, A, H1, H2");
-		var i;
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
 
-		document.getElementById("container").style.backgroundColor = "#".concat(randomColor);
-		
-		for (i = 0; i < y.length; i++) {
- 			y[i].style.color = "#FFFFFF";
- 			y[i].style.mixBlendMode = "difference";
-		}
-	}
+body p, a, h1, h2 {
+	color: #000000;
+	mix-blend-mode: none;
+}
 
-</script>
+body p {
+	font-size: 12pt;
+}
 
-<!-- onload="colorPicker()" -->
+body h1 {
+	font-size: 24pt;
+}
+
+body h2 {
+	font-size: 18pt;
+}
+
+body a {
+	text-decoration: underline;
+}
+
+.quoteital {
+	margin-right: 4pt;
+}
+
+#topheader {
+	margin-top: 0px;
+}
+
+.listlink {
+	line-height: 150%;
+}
+
+a:hover {
+	color: blue;
+	transition: color 0.5s;
+}
+
+</style>
 <body id="body">
 
 	<!-- Header -->
@@ -54,15 +88,15 @@
 	<p>In <i>Mud Nostalgia</i>, our stiff-upper-lip reporter takes us to the aborted interstellar colony ship Magellan, which was bought and moved to the edge of the solar system decades ago by old-money Silicon Valley elites fleeing government interference on Earth. Now, the eugenics-obsessed gentry play deadly status games on the upper decks and ambitious young coders commute through urban warzones below; in the dark, abandoned heart of the ship, the hated "savages" experiment with new laws for a new form of Nature.</p>
 
 	<p>
-	<a href="http://www.evanforman.com/pmi-bookshop-us.html">Bookshop (US)</a><br>
-	<a href="http://www.evanforman.com/pmi-amazon-us.html">Amazon (US)</a><br>
-	<a href="http://www.evanforman.com/pmi-amazon-uk.html">Amazon (UK)</a>
+	<a class="listlink" href="http://www.evanforman.com/pmi-bookshop-us.html">Bookshop (US)</a><br>
+	<a class="listlink" href="http://www.evanforman.com/pmi-amazon-us.html">Amazon (US)</a><br>
+	<a class="listlink" href="http://www.evanforman.com/pmi-amazon-uk.html">Amazon (UK)</a>
 	</p>
 
 	<!-- The Keepers of Time -->
 
 	<h2><i>The Keepers of Time</i></h2>
-	<p>For Michael Robertson and James Wylder's <i><a href="http://www.jameswylder.com/lady-aesc.html">Lady Aesculapius</a></i> series. A cozy night in on Aesculapius’ travelling moon turns into a mind-bending tour of her museum of clocks collected from alien cultures all over the multiverse. Come see curiosities like the world-famous Papiermâchéhenge, the unthinkaboutable Grandmother Clock, a suitcase full of cash from where time is literally money and the watched clock that never ticks.</p>
+	<p>For Michael Robertson and James Wylder's <i><a href="http://www.jameswylder.com/lady-aesc.html">Lady Aesculapius</a></i> series. A cozy night in on Aesculapius’ travelling moon turns into a mind-bending tour of her museum of clocks collected from alien cultures all over the multiverse. Come see curiosities like the world-famous Papiermâchéhenge, the unthinkaboutable Grandmother Clock, the suitcase full of cash from where time is literally money and the watched clock that never ticks.</p>
 
 	<p><a href="http://www.evanforman.com/kot-web.html">The Keepers of Time - 30min read</a></p>
 
