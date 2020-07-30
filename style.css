@@ -1,4 +1,4 @@
-html {
+	html {
 	margin: 25px;
 	padding: 0px;
 	padding-bottom: 50px;
@@ -20,11 +20,12 @@ body {
 
 body p, a, h1, h2 {
 	color: #000000;
-	mix-blend-mode: none;
 }
 
 body p {
 	font-size: 12pt;
+	text-align: justify;
+	hyphens: manual;
 }
 
 body h1 {
@@ -45,4 +46,40 @@ body a {
 
 #topheader {
 	margin-top: 0px;
+}
+
+.listlink {
+	line-height: 150%;
+}
+
+a:hover {
+	color: blue;
+	transition: color 0.5s;
+}
+
+@media only screen and (max-width: 425px) {
+	body {
+		text-align: auto;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Change background and text colour*/
+	body p, a, h1, h2 {
+		color: #E0E0E0;
+	}
+
+	html {
+		background-color: #202020
+	}
+
+	a:hover {
+		color: yellow;
+		transition: color 0.5s;
+	}
+
+	::selection {
+		color: #202020;
+		background-color: yellow;
+	}
 }
