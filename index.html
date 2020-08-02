@@ -68,7 +68,10 @@ a:hover {
 ::selection {
 	color: #FFFFFF;
 	background-color: blue;
+	text-decoration-color: #FFFFFF;
 }
+
+/* Mobile Text Justification */
 
 @media only screen and (max-width: 425px) {
 	body {
@@ -76,8 +79,9 @@ a:hover {
 	}
 }
 
+ /* Dark Mode */
+ 
 @media (prefers-color-scheme: dark) {
-    /* Change background and text colour*/
 	body p, a, h1, h2 {
 		color: #E0E0E0;
 	}
@@ -94,6 +98,7 @@ a:hover {
 	::selection {
 		color: #101010;
 		background-color: yellow;
+		text-decoration-color: #101010;
 	}
 }
 
