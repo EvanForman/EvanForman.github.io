@@ -1,4 +1,4 @@
-	html {
+html {
 	margin: 25px;
 	padding: 0px;
 	padding-bottom: 50px;
@@ -25,7 +25,9 @@ body p, a, h1, h2 {
 body p {
 	font-size: 12pt;
 	text-align: justify;
-	hyphens: manual;
+	-webkit-hyphens: manual;
+	    -ms-hyphens: manual;
+	        hyphens: manual;
 }
 
 body h1 {
@@ -54,8 +56,13 @@ body a {
 
 a:hover {
 	color: blue;
+	-webkit-transition: color 0.5s;
+	-o-transition: color 0.5s;
 	transition: color 0.5s;
 }
+
+
+/* Mobile Text Justification */
 
 @media only screen and (max-width: 425px) {
 	body {
@@ -63,23 +70,52 @@ a:hover {
 	}
 }
 
+/* Light Mode*/
+
+@media (prefers-color-scheme: light) {
+	body a {
+		-webkit-text-decoration-color: blue;
+		        text-decoration-color: blue;
+	}
+
+	::-moz-selection {
+		color: #FFFFFF;
+		background-color: blue;
+	}
+
+	::selection {
+		color: #FFFFFF;
+		background-color: blue;
+	}
+}
+
+ /* Dark Mode */
+ 
 @media (prefers-color-scheme: dark) {
-    /* Change background and text colour*/
 	body p, a, h1, h2 {
 		color: #E0E0E0;
+		-webkit-text-decoration-color: yellow;
+		        text-decoration-color: yellow;
 	}
 
 	html {
-		background-color: #202020
+		background-color: #101010
 	}
 
 	a:hover {
 		color: yellow;
+		-webkit-transition: color 0.5s;
+		-o-transition: color 0.5s;
 		transition: color 0.5s;
 	}
 
+	::-moz-selection {
+		color: #101010;
+		background-color: yellow;
+	}
+
 	::selection {
-		color: #202020;
+		color: #101010;
 		background-color: yellow;
 	}
 }
