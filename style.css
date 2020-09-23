@@ -99,7 +99,7 @@ a:hover {
 	}
 
 	html {
-		background-color: #101010
+		background-color: #080808
 	}
 
 	a:hover {
@@ -110,12 +110,12 @@ a:hover {
 	}
 
 	::-moz-selection {
-		color: #101010;
+		color: #080808;
 		background-color: #99D1E9;
 	}
 
 	::selection {
-		color: #101010;
+		color: #080808;
 		background-color: #99D1E9;
 	}
 }
