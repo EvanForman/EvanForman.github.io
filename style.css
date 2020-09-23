@@ -94,8 +94,8 @@ a:hover {
 @media (prefers-color-scheme: dark) {
 	body p, a, h1, h2 {
 		color: #E0E0E0;
-		-webkit-text-decoration-color: yellow;
-		        text-decoration-color: yellow;
+		-webkit-text-decoration-color: #99D1E9;
+		        text-decoration-color: #99D1E9;
 	}
 
 	html {
@@ -103,7 +103,7 @@ a:hover {
 	}
 
 	a:hover {
-		color: yellow;
+		color: #99D1E9;
 		-webkit-transition: color 0.5s;
 		-o-transition: color 0.5s;
 		transition: color 0.5s;
@@ -111,11 +111,11 @@ a:hover {
 
 	::-moz-selection {
 		color: #101010;
-		background-color: yellow;
+		background-color: #99D1E9;
 	}
 
 	::selection {
 		color: #101010;
-		background-color: yellow;
+		background-color: #99D1E9;
 	}
 }
