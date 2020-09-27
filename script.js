@@ -18,3 +18,8 @@ function colorPicker() {
  		y[i].style.mixBlendMode = "difference";
 	}
 }
+
+function fadeIntro() {
+	document.getElementById('container').innerHTML += '<div id="cover"></div>';
+	document.getElementById('container').style.transform = "opacity:0";
+}
