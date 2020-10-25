@@ -45,7 +45,14 @@ body a {
 
 #topheader {
 	margin-top: 0px;
-	text-decoration-color: #FFFFFF;
+}
+
+#topheader a {
+	text-decoration: none;
+}
+
+#topheader a:hover {
+	color: #000000;
 }
 
 .listlink {
@@ -91,8 +98,12 @@ a:hover {
 		background-color: #080808
 	}
 
-	#topheader {
-		text-decoration-color: #080808;
+	#topheader a {
+		text-decoration: none;
+	}
+
+	#topheader a:hover {
+		color: #E0E0E0;
 	}
 
 	a:hover {
