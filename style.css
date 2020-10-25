@@ -45,7 +45,9 @@ body a {
 
 #topheader {
 	margin-top: 0px;
-	text-decoration: none;
+	text-decoration-line: none;
+	text-decoration-color: none;
+	text-decoration-style: none;
 }
 
 .listlink {
