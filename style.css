@@ -8,35 +8,104 @@ body {
 	margin: 0px;
 	padding: 0px;
 	max-width: 600px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 html {
 	background-color: #FFFFFF;
 }
 
-body {
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-body p, a, h1, h2 {
+p, a, h1, h2, h3, h4, h5, b, i, u, s, li {
 	color: #000000;
 }
 
-body p {
+h1 {
+	font-size: 24pt;
+}
+
+h2, h3, h4, h5 {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-size: 18pt;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+h4 {
+	font-size: 14pt;
+}
+
+h5 {
+	font-family: 12pt;
+}
+
+p {
 	font-size: 12pt;
 	text-align: left;
 }
 
-body h1 {
-	font-size: 24pt;
-}
-
-body h2 {
-	font-size: 18pt;
-}
-
-body a {
+a {
 	text-decoration: underline;
+}
+
+a:hover {
+	color: blue;
+	-webkit-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+u {
+	text-decoration-color: #000000;
+}
+
+s {
+	text-decoration-color: #000000;
+}
+
+blockquote {
+	margin: auto;
+	width: 90%;
+	border: 1px solid #000000;
+	padding: 10px;
+}
+
+blockquote p {
+	margin: auto;
+	text-align: justify;
+}
+
+.src {
+	text-align: right;
+	padding-top: 10px;
+}
+
+mark {
+	background-color: blue;
+	color: #E0E0E0;
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+	margin-left: 0px;
+	padding-left: 10px;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 10px;
+	list-style-position: inside;
+}
+
+hr {
+	border-width: 1px;
 }
 
 .quoteital {
@@ -59,17 +128,20 @@ body a {
 	line-height: 150%;
 }
 
-a:hover {
-	color: blue;
-	-webkit-transition: color 0.5s;
-	-o-transition: color 0.5s;
-	transition: color 0.5s;
+/* Mobile */
+
+@media only screen and (max-width: 425px) {
+
+	blockquote p {
+  	text-align: left;
+	}
 }
 
 /* Light Mode*/
 
 @media (prefers-color-scheme: light) {
-	body a {
+
+	a {
 		-webkit-text-decoration-color: blue;
 		        text-decoration-color: blue;
 	}
@@ -88,7 +160,8 @@ a:hover {
  /* Dark Mode */
  
 @media (prefers-color-scheme: dark) {
-	body p, a, h1, h2 {
+
+	p, a, h1, h2, h3, h4, h5, b, i, u, s, li {
 		color: #E0E0E0;
 		-webkit-text-decoration-color: #99D1E9;
 		        text-decoration-color: #99D1E9;
@@ -96,6 +169,23 @@ a:hover {
 
 	html {
 		background-color: #080808
+	}
+
+	u {
+		text-decoration-color: #E0E0E0;
+	}
+
+	s {
+		text-decoration-color: #E0E0E0;
+	}
+
+	blockquote {
+		border-color: #E0E0E0;
+	}
+
+	mark {
+		background-color: #99D1E9;
+		color: #080808;
 	}
 
 	#topheader a {
