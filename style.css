@@ -24,10 +24,7 @@ body p, a, h1, h2 {
 
 body p {
 	font-size: 12pt;
-	text-align: justify;
-	-webkit-hyphens: manual;
-	    -ms-hyphens: manual;
-	        hyphens: manual;
+	text-align: left;
 }
 
 body h1 {
@@ -48,6 +45,8 @@ body a {
 
 #topheader {
 	margin-top: 0px;
+	color: #000000;
+	text-decoration: none;
 }
 
 .listlink {
@@ -59,15 +58,6 @@ a:hover {
 	-webkit-transition: color 0.5s;
 	-o-transition: color 0.5s;
 	transition: color 0.5s;
-}
-
-
-/* Mobile Text Justification */
-
-@media only screen and (max-width: 425px) {
-	body {
-		text-align: auto;
-	}
 }
 
 /* Light Mode*/
