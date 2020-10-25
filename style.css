@@ -96,6 +96,10 @@ a:hover {
 		background-color: #080808
 	}
 
+	#topheader {
+		color: #E0E0E0;
+	}
+
 	a:hover {
 		color: #99D1E9;
 		-webkit-transition: color 0.5s;
