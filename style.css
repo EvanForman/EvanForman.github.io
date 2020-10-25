@@ -45,7 +45,6 @@ body a {
 
 #topheader {
 	margin-top: 0px;
-	color: #000000;
 	text-decoration: none;
 }
 
@@ -90,10 +89,6 @@ a:hover {
 
 	html {
 		background-color: #080808
-	}
-
-	#topheader {
-		color: #E0E0E0;
 	}
 
 	a:hover {
