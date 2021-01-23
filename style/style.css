@@ -28,6 +28,7 @@ h1 {
 h2, h3, h4, h5 {
 	margin: 0px;
 	padding: 0px;
+	padding-bottom: 20px;
 }
 
 h2 {
@@ -130,7 +131,9 @@ img {
 }
 
 #topheader {
-	margin-top: 0px;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 20px;
 }
 
 #topheader a {
