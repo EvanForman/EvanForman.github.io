@@ -188,7 +188,7 @@ img {
 	}
 
 	html {
-		background-color: #080808
+		background-color: #1E1E1E
 	}
 
 	u {
@@ -205,7 +205,7 @@ img {
 
 	mark {
 		background-color: #99D1E9;
-		color: #080808;
+		color: #1E1E1E;
 	}
 
 	#topheader a {
@@ -224,12 +224,12 @@ img {
 	}
 
 	::-moz-selection {
-		color: #080808;
+		color: #1E1E1E;
 		background-color: #99D1E9;
 	}
 
 	::selection {
-		color: #080808;
+		color: #1E1E1E;
 		background-color: #99D1E9;
 	}
 }
