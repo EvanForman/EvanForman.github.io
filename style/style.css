@@ -21,6 +21,8 @@ p, a, h1, h2, h3, h4, h5, b, i, u, s, li {
 
 h1 {
 	font-size: 24pt;
+	margin: 0px;
+	padding: 0px;
 }
 
 h2, h3, h4, h5 {
@@ -109,6 +111,14 @@ ul {
 
 hr {
 	border-width: 1px;
+}
+
+img {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .tab {
