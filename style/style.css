@@ -4,11 +4,29 @@ html {
 	padding-bottom: 50px;
 }
 
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	max-width: 600px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: SpaceGrotesk;
 }
 
 html {
@@ -23,12 +41,13 @@ h1 {
 	font-size: 24pt;
 	margin: 0px;
 	padding: 0px;
+	font-style: bold;
 }
 
 h2, h3, h4, h5 {
 	margin: 0px;
 	padding: 0px;
-	padding-bottom: 20px;
+	font-style: bold;
 }
 
 h2 {
@@ -54,6 +73,9 @@ h5 {
 p {
 	font-size: 12pt;
 	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 15px;
 }
 
 a {
