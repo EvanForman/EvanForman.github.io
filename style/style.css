@@ -52,17 +52,20 @@ h2, h3, h4, h5 {
 
 h2 {
 	font-size: 18pt;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 h3 {
 	font-size: 16pt;
-	padding-bottom: 5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
 }
 
 h4 {
 	font-size: 14pt;
-	padding-bottom: 5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
 	font-weight: normal;
 }
 
@@ -75,7 +78,8 @@ p {
 	text-align: left;
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 15px;
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 
 a {
@@ -97,8 +101,14 @@ s {
 	text-decoration-color: #000000;
 }
 
+mark {
+	background-color: blue;
+}
+
 blockquote {
 	margin: auto;
+	margin-top: 14px;
+	margin-bottom: 14px;
 	width: 90%;
 	border: 1px solid #000000;
 	padding: 10px;
@@ -114,26 +124,31 @@ blockquote p {
 	padding-top: 10px;
 }
 
-mark {
-	background-color: blue;
-	color: #E0E0E0;
-}
-
 ol {
 	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
-	margin-left: 0px;
+	margin: 0px;
+	padding: 0px;
 	padding-left: 10px;
+	margin-top: 14px;
+	margin-bottom: 14px;
 }
 
 ul {
-	margin-left: 0px;
+	margin: 0px;
+	padding: 0px;
 	padding-left: 10px;
 	list-style-position: inside;
+	margin-top: 14px;
+	margin-bottom: 14px;
 }
 
 hr {
-	border-width: 1px;
+	border-width: 1px solid;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 14px;
+	margin-bottom: 14px;
 }
 
 img {
